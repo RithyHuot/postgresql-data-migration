@@ -1,0 +1,16 @@
+version: '2.1'
+
+services:
+  old-db-server:
+    image: postgres:9.6
+    ports:
+      - 5432:5432
+    volumes_from:
+      - container:old-dbstore:rw
+
+  db-server:
+    image: postgres:9.6
+    ports:
+      - 5433:5432
+    volumes_from:
+      - container:dbstore:rw
