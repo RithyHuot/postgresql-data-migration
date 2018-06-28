@@ -5,7 +5,7 @@
 
 **REQUIREMENT:** Get [docker](https://docs.docker.com/engine/installation/linux/ubuntulinux/) and [docker-compose](https://docs.docker.com/compose/install/)
 
-Follow these steps to prepare a data container
+Follow these steps to prepare the data containers
 
 #### Old Database
 * Create a container that won't do anything other than keeping your data:
@@ -128,6 +128,6 @@ DROP SCHEMA old_db_server_db CASCADE;
 DROP SERVER foreign_db CASCADE;
 ```
 
-**Resource:** 
-* PostgreSQL;s Foreign Data Wrapper Documentation ([Link](https://www.postgresql.org/docs/9.5/static/postgres-fdw.html))
+**Resource:**
+* PostgreSQL's Foreign Data Wrapper Documentation ([Link](https://www.postgresql.org/docs/9.5/static/postgres-fdw.html))
 * PostgreSQL's Foreign Data Wrapper Article ([Link](https://robots.thoughtbot.com/postgres-foreign-data-wrapper))

@@ -1,6 +1,7 @@
 -- Install the postgres_fdw extension
 CREATE EXTENSION postgres_fdw;
 
+-- Create a server
 CREATE SERVER foreign_db
         FOREIGN DATA WRAPPER postgres_fdw
         OPTIONS (host 'old-db-server', port '5432', dbname 'old_db', updatable 'false');
